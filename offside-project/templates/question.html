@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<script type="text/javascript" src="{{url_for('static', filename='question.js')}}"></script>
+
+<script>
+    var Qnumber = {{ item.Qnumber }};
+</script>
+
+<body id="lesson-body">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2>QUESTION {{item.Qnumber}}</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>QUESTION {{item.Qnumber}} TEXT</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>MEDIA FOR QUESTION {{item.Qnumber}}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>INSERT OPTIONS FOR QUESTION {{item.Qnumber}} HERE</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+            </div>
+            <div class="col-md-6 d-flex justify-content-end">
+                <button id="next" class="btn btn-primary">Next</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+{% endblock %}

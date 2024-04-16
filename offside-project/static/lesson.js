@@ -2,8 +2,12 @@ $(document).ready(function(){
 
     $("#next").click(function(){
         let next = lessonNumber + 1
-
-        window.location.href = "/lesson/" + next;
+        if (next == 8){
+            window.location.href = "/quizStart"
+        }
+        else{
+            window.location.href = "/lesson/" + next;
+        }
 
     });
 
@@ -16,8 +20,6 @@ $(document).ready(function(){
         else{
             window.location.href = "/lesson/" + prev;
         }
-
     });
-    
 
 });

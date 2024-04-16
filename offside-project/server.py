@@ -32,7 +32,32 @@ lessons = {
         "number": "7",
         "media": "youtube.com"
         }
-}
+    }
+
+questions = {
+    "1": {
+        "Qnumber": "1",
+        "media": "youtube.com"
+        },
+    "2": {
+        "Qnumber": "2",
+        "media": "youtube.com"
+        },
+    "3": {
+        "Qnumber": "3",
+        "media": "youtube.com"
+        },
+    "4": {
+        "Qnumber": "4",
+        "media": "youtube.com"
+        },
+    "5": {
+        "Qnumber": "5",
+        "media": "youtube.com"
+        }
+    }
+
+
 # ROUTES
 @app.route('/')
 def homepage():
@@ -43,7 +68,18 @@ def view_lesson(number):
    for item in lessons.values():
        if item['number'] == number:
            return render_template('lesson.html', item = item, lessons=lessons)
-   return render_template('lesson.html')   
+   return render_template('lesson.html')
+
+@app.route('/quizStart')
+def quiz_start():
+   return render_template('quizStart.html')   
+
+@app.route('/question/<Qnumber>')
+def view_question(Qnumber):
+   for item in questions.values():
+       if item['Qnumber'] == Qnumber:
+           return render_template('question.html', item = item, questions=questions)
+   return render_template('question.html')   
 
 
 
