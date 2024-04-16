@@ -1,9 +1,5 @@
 $(document).ready(function(){
-
     $("#startlearning").click(function(){
-        window.location.href = "/lesson1";
-
+        window.location.href = "/lesson/1";
     });
-    
-
 });

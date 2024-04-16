@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<script type="text/javascript" src="{{url_for('static', filename='lesson.js')}}"></script>
+
+<script>
+    var lessonNumber = {{ item.number }};
+</script>
+
+<body id="lesson-body">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2>TITLE FOR LESSON {{item.number}}</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>DESCRIPTION FOR LESSON {{item.number}}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>MEDIA FOR LESSON {{item.number}}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <button id="prev" class="btn btn-primary">Previous</button>
+            </div>
+            <div class="col-md-6 d-flex justify-content-end">
+                <button class="btn btn-secondary">Check your understanding</button>
+                <button id="next" class="btn btn-primary">Next</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+{% endblock %}
