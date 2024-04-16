@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<script src = "static/display_results.js"> </script>
+
+<script>
+    var data = {{data|tojson}};
+</script>
+
+<div id = all>
+
+    <div> Search Result </div>
+
+    <div> Showing results for : '{{search}}' </div>
+
+    <div class = "result_list"> 
+
+        <!-- results go here, added by JS -->
+
+    </div>
+
+
+</div>
+
+
+{% endblock %}
+
+

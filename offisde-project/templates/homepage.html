@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<head>
+    <script type="text/javascript" src="{{url_for('static', filename='homepage.js')}}"></script>
+</head>
+
+<div id = all>
+
+    <div> Learn abt offside </div>
+
+    <div> <button id = "startlearning" type="submit" class="btn btn-primary">Start Learning</button> </div>
+
+    <div> <button type="submit" class="btn btn-primary">Quiz time</button> </div>
+
+
+</div>
+
+{% endblock %}
