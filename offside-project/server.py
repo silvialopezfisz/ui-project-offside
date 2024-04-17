@@ -17,6 +17,8 @@ app = Flask(__name__)
 #     ]
 # })
 
+# maxi comment for test purposes
+
 lessons = {
     "1": {
         "number": "1",
