@@ -99,35 +99,38 @@ questions = {
         "media": "https://player.vimeo.com/935697965?share=copy", 
         "answer": "No, because the Pedro is standing behind the ball when the ball is passed and Messi does not interfere with the play", 
         "explanation": ["This is not sufficient for an off-side call, nuance #1 active involvement is required", "There was no active involvement", "Correct!", "This is not a rule"]
-        },
-    "4": {
-        "Qnumber": "1",
-        "type": "learning",
-        "content": "Is this offiside?", 
-        "options": ["Yes", "No"], 
-        "media": "https://player.vimeo.com/935697965?share=copy", 
-        "answer": "No", 
-        "explanation": ["Incorrect", "Correct! As mentioned in the basics: offside can only occur on the attacking side of the field. However, here Torres is on the defending half of the field when the pass is made!"]
-        },
-    "5": {
-        "Qnumber": "2",
-        "type": "learning", 
-        "content": "Is this offiside?", 
-        "options": ["Yes", "No"], 
-        "media": "https://player.vimeo.com/935697965?share=copy", 
-        "answer": "Yes", 
-        "explanation": ["Correct! As mentioned in nuance #1: It’s offside if the player is actively involved! Here, Griezmann is offside when the pass is made and even though he doesn’t directly get the ball, he was actively involved in the play and in an offside position when the ball was passed!", "Incorrect"]
-        },
-    "6": {
-        "Qnumber": "3",
-        "type": "learning", 
-        "content": "Is this offside?", 
-        "options": ["Yes", "No"],
-        "media": "https://player.vimeo.com/935697965?share=copy", 
-        "answer": "No", 
-        "explanation": ["Incorrect", "The correct answer is NO! While Suarez is indeed offside when the “pass” is made, it comes from a throw-in!  Thus, the offside rule is not applicable and the goal is valid!"]
-        },
-}
+        }
+    }
+
+learning_questions = {
+            "1": {
+                "learningQuestionId": "1",
+                "lessonNumber": "2",
+                "content": "Is this offiside?", 
+                "options": ["Yes", "No"], 
+                "media": "https://player.vimeo.com/935697965?share=copy", 
+                "answer": "No", 
+                "explanation": ["Incorrect", "Correct! As mentioned in the basics: offside can only occur on the attacking side of the field. However, here Torres is on the defending half of the field when the pass is made!"]
+                },
+            "2": {
+                "learningQuestionId": "2",
+                "lessonNumber": "3", 
+                "content": "Is this offiside?", 
+                "options": ["Yes", "No"], 
+                "media": "https://player.vimeo.com/935697965?share=copy", 
+                "answer": "Yes", 
+                "explanation": ["Correct! As mentioned in nuance #1: It’s offside if the player is actively involved! Here, Griezmann is offside when the pass is made and even though he doesn’t directly get the ball, he was actively involved in the play and in an offside position when the ball was passed!", "Incorrect"]
+                },
+            "3": {
+                "learningQuestionId": "3",
+                "lessonNumber": "7", 
+                "content": "Is this offside?", 
+                "options": ["Yes", "No"],
+                "media": "https://player.vimeo.com/935697965?share=copy", 
+                "answer": "No", 
+                "explanation": ["Incorrect", "The correct answer is NO! While Suarez is indeed offside when the “pass” is made, it comes from a throw-in!  Thus, the offside rule is not applicable and the goal is valid!"]
+            }
+    }
 
 # ROUTES
 @app.route('/')
@@ -145,6 +148,14 @@ def view_lesson(number):
 @app.route('/quizStart')
 def quiz_start():
    return render_template('quizStart.html')   
+
+@app.route('/learning_question/<Qnumber>')
+def view_learning_question(Qnumber):
+    question = learning_questions.get(Qnumber)
+    if question:
+        return render_template('learning_question.html', item=question, learning_questions=learning_questions)
+    else:
+        return redirect(url_for('quiz_start'))
 
 @app.route('/question/<Qnumber>')
 def view_question(Qnumber):

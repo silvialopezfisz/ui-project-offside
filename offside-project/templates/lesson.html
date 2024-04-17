@@ -37,7 +37,7 @@
             <div class="col-md-6 d-flex justify-content-end">
                 {% if item.learningQuestionId %}
                 <!-- This button will only appear if there is a learningQuestionId -->
-                <button id="checkUnderstanding" class="btn btn-secondary" onclick="location.href='/question/{{ item.learningQuestionId }}?type=learning'">
+                <button id="checkUnderstanding" class="btn btn-secondary" onclick="location.href='/learning_question/{{ item.learningQuestionId }}'">
                     Check your understanding
                 </button>
                 {% endif %}
