@@ -23,11 +23,12 @@ $(document).ready(function(){
     // Handling the 'Next' button click
     $("#next").click(function(){
         let next = parseInt(Qnumber) + 1;  // Ensure Qnumber is treated as an integer
-        if (next === 6){  // Assuming 5 is the last question
-            window.location.href = "/quizStart";
+        if (next > 3){  // Change this to match your total number of questions
+            // Send final score to server via POST request and redirect
+            window.location.href = "/quizresults?score=" + score;
         } else {
-            window.location.href = "/question/" + next + "?type=" + itemType;
-        }
+            window.location.href = "/question/" + next;
+        }        
     });
 
     // Handling the 'Previous' button click

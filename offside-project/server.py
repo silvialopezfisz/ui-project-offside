@@ -153,8 +153,11 @@ def view_question(Qnumber):
         return render_template('question.html', item=question, questions=questions)
     else:
         return redirect(url_for('quiz_start'))
-
-
+    
+@app.route('/quizresults')
+def quiz_results():
+    score = request.args.get('score', default=0, type=int)
+    return render_template('quizresults.html', score=score)
 
 
 if __name__ == '__main__':
