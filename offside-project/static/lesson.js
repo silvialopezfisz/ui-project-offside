@@ -1,24 +1,16 @@
 $(document).ready(function(){
 
     $("#next").click(function(){
-        let next = lessonNumber + 1
-        if (next == 8){
-            window.location.href = "/quizStart"
-        }
-        else{
-            window.location.href = "/lesson/" + next;
-        }
-
+        let nextLessonNumber = parseInt(lessonNumber) + 1;  // Convert to integer and increment
+        window.location.href = "/lesson/" + nextLessonNumber;  // Navigate to the next lesson
     });
 
     $("#prev").click(function(){
-        let prev = lessonNumber - 1
-
-        if (prev == 0){
-            window.location.href = "/" ;
-        }
-        else{
-            window.location.href = "/lesson/" + prev;
+        let prevLessonNumber = parseInt(lessonNumber) - 1;  // Convert to integer and decrement
+        if (prevLessonNumber < 1) {
+            window.location.href = "/";  // Return to the homepage if there is no previous lesson
+        } else {
+            window.location.href = "/lesson/" + prevLessonNumber;  // Navigate to the previous lesson
         }
     });
 

@@ -11,17 +11,23 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <h2>TITLE FOR LESSON {{item.number}}</h2>
+                <h2>{{ item.title }}</h2>
             </div>
         </div>
         <div class="row">
             <div class="col">
-                <p>DESCRIPTION FOR LESSON {{item.number}}</p>
+                <p>{{ item.description }}</p>
             </div>
         </div>
         <div class="row">
             <div class="col">
-                <p>MEDIA FOR LESSON {{item.number}}</p>
+                {% if 'player.vimeo.com' in item.media %}
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="{{ item.media }}" allowfullscreen></iframe>
+                    </div>
+                {% else %}
+                    <img src="{{ item.media }}" alt="Media" class="img-fluid">
+                {% endif %}
             </div>
         </div>
         <div class="row">
@@ -29,7 +35,12 @@
                 <button id="prev" class="btn btn-primary">Previous</button>
             </div>
             <div class="col-md-6 d-flex justify-content-end">
-                <button class="btn btn-secondary">Check your understanding</button>
+                {% if item.learningQuestionId %}
+                <!-- This button will only appear if there is a learningQuestionId -->
+                <button id="checkUnderstanding" class="btn btn-secondary" onclick="location.href='/question/{{ item.learningQuestionId }}?type=learning'">
+                    Check your understanding
+                </button>
+                {% endif %}
                 <button id="next" class="btn btn-primary">Next</button>
             </div>
         </div>
