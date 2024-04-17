@@ -2,7 +2,12 @@ $(document).ready(function(){
 
     $("#next").click(function(){
         let nextLessonNumber = parseInt(lessonNumber) + 1;  // Convert to integer and increment
-        window.location.href = "/lesson/" + nextLessonNumber;  // Navigate to the next lesson
+        if (nextLessonNumber > 7){
+            window.location.href = "/quizStart"
+        }
+        else{
+            window.location.href = "/lesson/" + nextLessonNumber;  // Navigate to the next lesson
+        }
     });
 
     $("#prev").click(function(){
