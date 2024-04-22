@@ -159,22 +159,23 @@ def quiz_results():
 
 ################################
 
-# Initialize score in session
+# SESSION ROUTES
+
 @app.route('/init_score')
 def init_score():
     session['score'] = 0
     return 'Score initialized'
 
-# Increment score in session
 @app.route('/increment_score')
 def increment_score():
     session['score'] += 1
     return 'Score incremented'
 
-# Get score from session
 @app.route('/get_score')
 def get_score():
     return str(session.get('score', 0))
+
+################################
 
 
 if __name__ == '__main__':
