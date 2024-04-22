@@ -1,0 +1,25 @@
+/* CSS for question.html */
+.option {
+    cursor: pointer;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.option.hovered {
+    background-color: #f0f0f0;
+}
+
+.option.selected {
+    background-color: #c0c0c0;
+}
+
+.option.correct {
+    background-color: #4cd34c;
+}
+
+.option.wrong {
+    background-color: #ff8684;
+}
+/* End CSS for question.html */
