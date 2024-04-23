@@ -3,7 +3,7 @@
 {% block content %}
 <script type="text/javascript" src="{{ url_for('static', filename='learningQuestion.js') }}"></script>
 
-<div class="container">
+<div class="container learning-question-container">
     <div class="row">
         <div class="col">
             <h2>Check Your Understanding For Lesson {{ item.lessonNumber }}</h2>
@@ -11,7 +11,7 @@
     </div>
     <div class="row">
         <div class="col">
-            <p>{{ item.content }}</p>
+            <p id="learning-question">{{ item.content }}</p>
             <img src="{{ item.media }}" alt="Question Media" class="img-fluid">
         </div>
     </div>
@@ -39,7 +39,6 @@
 
 <script>
     var lessonNumber = "{{ item.lessonNumber }}";
-
 </script>
 
 {% endblock %}

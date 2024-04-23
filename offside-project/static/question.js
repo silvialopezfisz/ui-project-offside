@@ -40,6 +40,12 @@ $(document).ready(function(){
 
         $("#explanation").text(explanation);
 
+        if (explanation.length > 0) {
+            $("#explanation").text(explanation).addClass("visible-explanation");
+        } else {
+            $("#explanation").text("").removeClass("visible-explanation");
+        }
+
         console.log(isCorrect)
         if (isCorrect) {
             $(this).addClass("correct");

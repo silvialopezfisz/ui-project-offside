@@ -2,20 +2,25 @@
 
 {% block content %}
 
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 <head>
     <script type="text/javascript" src="{{url_for('static', filename='homepage.js')}}"></script>
 </head>
 
-<div id=home-body>
+<div id="home-body" class="home-container">
 
-    <div> Learn abt offside </div>
+    <h1>Welcome to the Game Changer!</h1>
 
-    <div> <button id = "startlearning" type="submit" class="btn btn-primary">Start Learning</button> </div>
+    <p class="home-intro">
+        Discover how one rule shapes the thrill of soccer, guiding the flow of play and challenging even the greatest minds. Are you ready to unravel the mystery of the offside rule?
+    </p>
 
-    <div> <button id = "startquiz" type="submit" class="btn btn-primary">Quiz time</button> </div>
+    <img src="https://i.ibb.co/BKBs36f/Screenshot-2024-04-16-at-22-52-30.png" alt="Offside Rule Visual" class="home-image">
 
-    <img src="https://i.ibb.co/BKBs36f/Screenshot-2024-04-16-at-22-52-30.png" alt="Screenshot-2024-04-16-at-22-52-30" border="0">
-
+    <div class="button-container">
+        <button id="startlearning" type="submit" class="btn primary-button">Start Learning</button>
+        <button id="startquiz" type="submit" class="btn primary-button">Quiz time</button>
+    </div>
 
 </div>
 

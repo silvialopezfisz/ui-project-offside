@@ -1,13 +1,12 @@
 {% extends "layout.html" %}
 
 {% block content %}
-<script type="text/javascript" src="{{url_for('static', filename='lesson.js')}}"></script>
-
+<script type="text/javascript" src="{{ url_for('static', filename='lesson.js') }}"></script>
 <script>
     var lessonNumber = {{ item.number }};
 </script>
 
-<body id="lesson-body">
+<div id="lesson-body">
     <div class="container">
         <div class="row">
             <div class="col">
@@ -16,27 +15,24 @@
         </div>
         <div class="row">
             <div class="col">
-                <p>{{ item.description }}</p>
+                <p id="descirption">{{ item.description }}</p>
             </div>
         </div>
-        <div class="row">
+        <div class="row learning-media">
             <div class="col">
                 {% if 'player.vimeo.com' in item.media %}
                     <div class="embed-responsive embed-responsive-16by9">
                         <iframe class="embed-responsive-item" src="{{ item.media }}" allowfullscreen></iframe>
                     </div>
                 {% else %}
-                    <img src="{{ item.media }}" alt="Media" class="img-fluid">
+                <img src="{{ item.media }}" alt="Media" class="img-fluid lesson-img" id="lesson-img-{{ item.number }}">
                 {% endif %}
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-6">
-                <button id="prev" class="btn btn-primary">Previous</button>
-            </div>
-            <div class="col-md-6 d-flex justify-content-end">
+        <div class="row learning-btn-container">
+            <button id="prev" class="btn btn-primary">Previous</button>
+            <div>
                 {% if item.learningQuestionId %}
-                <!-- This button will only appear if there is a learningQuestionId -->
                 <button id="checkUnderstanding" class="btn btn-secondary" onclick="location.href='/learning_question/{{ item.learningQuestionId }}'">
                     Check your understanding
                 </button>
@@ -45,6 +41,6 @@
             </div>
         </div>
     </div>
-</body>
+</div>
 
 {% endblock %}

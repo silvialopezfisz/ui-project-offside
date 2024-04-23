@@ -1,13 +1,357 @@
-/* CSS for question.html */
+/* Main styles for entire site */
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #073a08; /* Dark green, like text on a soccer pitch */
+    background: url('https://i.ibb.co/zV4PyVj/79-F1-F82-D-B925-4-D1-E-8263-03107-CDBFB11-1-201-a.jpg') repeat; /* URL to your grass texture image */
+    background-size: cover; /* Cover the entire background */
+    color: white; /* Change text color to white for better readability */
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #59703C; /* Dark green color for navbar */
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border: 1px solid #59703C;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-brand {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-link {
+    color: #ffffff;
+    font-size: 18px;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #e5e5e5;
+    text-decoration: underline;
+}
+
+/* Additional styling for hover effects and active state */
+.nav-link:hover, .navbar-brand:hover {
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+
+.home-container {
+    max-width: 960px;
+    margin: 0 auto;
+    margin-top: 5%;
+    padding: 20px;
+    text-align: center;
+    background-color: #597630; /* Slightly transparent white background for content */
+    border-radius: 8px; /* Optional: rounded corners for the container */
+}
+
+.home-intro {
+    font-size: 18px;
+}
+
+.home-image {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.button-container {
+    margin-top: 30px;
+}
+
+.btn.primary-button {
+    background-color: #004d99; /* FIFA-like blue */
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.7rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#startlearning {
+    margin-right: 10px;
+}
+
+#startquiz {
+    margin-left: 10px;
+}
+
+.btn.primary-button:hover {
+    background-color: #006bb3; /* A lighter blue for hover effect */
+}
+
+/* Lesson page specific styles */
+#lesson-body .container {
+    background-color: rgba(89, 112, 48, 0.85); /* Dark green background with transparency */
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 2%; /* Adds a bit of margin to the top for spacing */
+    color: white; /* Ensures text is readable against the dark background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+#lesson-body h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px; /* Gives more space below the header */
+}
+
+#lesson-body p {
+    color: #004d99;
+    background-color: white;
+    text-align: center;
+    font-size: 1.3rem; /* Ensures text is not too small or too large */
+    font-weight: bold;
+    line-height: 1.6; /* Improves readability */
+}
+
+/* Enhancing the visibility and design of buttons within lesson pages */
+#lesson-body .btn {
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+/* Specific styling for media in lessons */
+#lesson-body .embed-responsive-item,
+#lesson-body .img-fluid {
+    max-height: 450px; /* Restricts the size to ensure it does not dominate the screen */
+    margin-bottom: 20px; /* Adds space below the media */
+}
+
+.learning-media {
+    text-align: center;
+}
+
+.lesson-img {
+    border-radius: 10px;
+    height: 30%;
+    width: 70%;
+}
+
+#lesson-img-6 {
+    height: 40%;
+    width: 80%;
+}
+
+/* Adjustments for button layout in lesson pages */
+#lesson-body .row:last-child .col-md-6:first-child {
+    display: flex;
+    justify-content: start; /* Aligns the Previous button to the left */
+}
+
+#lesson-body .row:last-child .col-md-6:last-child {
+    display: flex;
+    justify-content: end; /* Aligns the Next and Check your understanding buttons to the right */
+}
+
+/* Enhancing the appearance of buttons */
+#lesson-body .btn {
+    width: auto; /* Allows the button to expand based on its content */
+    padding: 15px 30px; /* Larger padding for bigger buttons */
+    font-size: 1.2rem; /* Larger font size for better readability */
+    font-weight: bold; /* Makes the text bold */
+    letter-spacing: 1px; /* Increases spacing between letters */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+    cursor: pointer;
+}
+
+#resumeLearning {
+    cursor: pointer;
+}
+
+
+.learning-btn-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#lesson-body .btn:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Adds a shadow effect on hover */
+}
+
+#checkUnderstanding {
+    background-color: #006bb3; /* Specific color for the Check your understanding button */
+}
+
+#checkUnderstanding:hover {
+    background-color: #004d99; /* Darker shade on hover */
+}
+
+
+/* Enhancements for learning question page */
+.learning-question-container .row {
+    margin-bottom: 20px; /* Adds spacing between rows for better visual separation */
+}
+
+.learning-question-container h2 {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    width: 50%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    color: #004d99; /* Adds a FIFA-like blue color to match the site theme */
+    text-align: center; /* Centers the title for better focus */
+    margin-bottom: 25px; /* Adds more space below the header */
+}
+
+.learning-question-container p {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    width: 50%;
+    background-color: #004d99;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.1rem; /* Increases font size for readability */
+    color: #ffffff; /* White color for better contrast against the background */
+    text-align: justify; /* Justifies text for a cleaner presentation */
+}
+
+#learning-question {
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.learning-question-container img {
+    max-width: 100%; /* Ensures image is responsive and fits its container */
+    height: auto; /* Maintains aspect ratio */
+    margin: 20px 0; /* Adds vertical spacing around images */
+}
+
+/* Styling for options within form checks */
+.learning-question-container .form-check {
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background for the options */
+    padding: 10px; /* Padding around options */
+    margin: 10px 0; /* Spacing between each option */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.learning-question-container .form-check-input {
+    margin-right: 10px; /* Space between the checkbox and label */
+}
+
+.learning-question-container .form-check-label {
+    font-size: 1rem; /* Adjusts label font size for clarity */
+    color: #073a08; /* Dark green text to match the theme */
+}
+
+.learning-question-container .btn-secondary {
+    background-color: #357ABD; /* Specific shade of blue for the resume button */
+    color: #ffffff; /* White text for readability */
+    padding: 10px 20px; /* Adequate padding for a larger button */
+    font-size: 1.2rem; /* Larger font size for better interaction */
+    border-radius: 5px; /* Rounded corners for aesthetic alignment */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.learning-question-container .btn-secondary:hover {
+    background-color: #285a8e; /* Darker shade on hover for a dynamic effect */
+}
+
+
+
+/* General styles for the Quiz Start page */
+#quizStart {
+    max-width: 960px;
+    margin: 50px auto; /* Centers the content and provides top margin for spacing */
+    padding: 20px;
+    text-align: center; /* Ensures quizStart text and buttons are centered */
+    background-color: rgba(89, 112, 48, 0.9); /* Semi-transparent dark green background */
+    border-radius: 8px; /* Soft rounded corners for a modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds depth with a subtle shadow */
+    color: #ffffff; /* White text for high contrast and readability */
+}
+
+#quizStart div:first-child {
+    font-size: 1.5rem; /* Larger font size for introductory text */
+    margin-bottom: 30px; /* Adds space below the text */
+    color: #E6E6FA; /* A lighter shade for a bit of visual separation and emphasis */
+}
+
+/* Styling for buttons on the Quiz Start page */
+#quizStart .btn {
+    font-size: 1.2rem;
+    padding: 12px 25px; /* Sufficient padding for larger, more clickable buttons */
+    margin-top: 20px; /* Space above each button to reduce visual clutter */
+    width: 80%; /* Makes buttons wider to fit better in the container */
+    max-width: 300px; /* Limits maximum width for very large screens */
+    background-color: #004d99; /* Consistent blue color as used in other primary buttons */
+    border-radius: 5px;
+    cursor: pointer;
+    border: none; /* Removes default border */
+}
+
+#quizStart .btn:hover {
+    background-color: #006bb3; /* A lighter blue for hover effect */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25); /* More pronounced shadow on hover for a 3D effect */
+}
+
+#quizStart #startOver {
+    background-color: #B22222; /* Red color for the 'Start Over' button to indicate a different action */
+}
+
+#quizStart #startOver:hover {
+    background-color: #FF6347; /* Lighter red on hover */
+}
+
+/* QUESTION.html */
+
+/* Styling for the container and text */
+.container h2 {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    width: 50%;
+    background-color: white;
+    padding: 10px;
+    color: #004d99; /* Consistent theme color */
+    text-align: center;
+    margin-bottom: 20px; /* Spacing below the question header */
+    border-radius: 5px;
+}
+
+.container p {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    width: 50%;
+    background-color: #004d99;
+    padding: 10px;
+    color: white;
+    font-size: 1.2rem; /* Larger font size for question content */
+    text-align: center; /* Center-align the question text */
+    margin-bottom: 15px; /* Space below the question text */
+    border-radius: 5px;
+}
+
+/* CSS rules for question options */
 .option {
     cursor: pointer;
     padding: 10px;
     margin: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.5); /* Slightly transparent white for option buttons */
+    margin-bottom: 20px;
 }
 
-.option.hovered {
+.option:hover {
     background-color: #f0f0f0;
 }
 
@@ -22,4 +366,85 @@
 .option.wrong {
     background-color: #ff8684;
 }
-/* End CSS for question.html */
+
+.visible-explanation {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    font-size: 1.5rem;
+    width: 60%;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    color: #004d99;
+    border-radius: 10px;
+}
+
+/* Button styling adjustments */
+#next {
+    float: right; /* Aligns the Next button to the right */
+    margin-right: 20px; /* Right margin for spacing from the container edge */
+    background-color: #004d99;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 0.75; /* Starts off as half-transparent indicating disabled state */
+}
+
+#next:enabled {
+    opacity: 1; /* Fully opaque when enabled */
+}
+
+
+/* General styling for the Quiz Results page */
+.results-container {
+    text-align: center; /* Ensures all content is centered */
+    padding: 20px; /* Adds padding for spacing around content */
+    max-width: 800px; /* Restricts the maximum width for better readability */
+    margin: 40px auto; /* Centers the results-container with a top margin */
+    background-color: rgba(255, 255, 255, 0.9); /* Light background for the text content */
+    border-radius: 8px; /* Adds rounded corners for a softer look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow to lift the panel off the page */
+}
+
+.results-container h2 {
+    color: #004d99; /* Dark blue to keep it in line with the theme */
+    font-size: 2.5rem; /* Larger font size for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.results-container p.lead {
+    font-size: 1.4rem; /* Slightly larger paragraph font size */
+    color: white; /* Soft, dark gray color for the text */
+    margin-bottom: 30px; /* Extra space below the paragraph */
+}
+
+.alert.alert-success {
+    color: #155724; /* Green text color indicating success */
+    background-color: #d4edda; /* Light green background color */
+    border-color: #c3e6cb; /* Matching green border */
+    padding: 15px; /* Padding for the alert box */
+    border-radius: 5px; /* Rounded corners for the alert box */
+    font-weight: bold; /* Makes the font bold */
+    font-size: 1.2rem; /* Larger font size for emphasis */
+    margin-bottom: 25px;
+}
+
+.resulst-btn.btn-primary {
+    margin-top: 10px;
+    background-color: #007bff; /* Vivid blue for primary actions */
+    border: none; /* No border to keep the button clean */
+    padding: 10px 20px; /* Adequate padding for a clickable area */
+    font-size: 1.2rem; /* Larger font size for better readability */
+    border-radius: 5px; /* Rounded corners for the button */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Adds depth with a shadow */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    text-decoration: none;
+    color: white;
+}
+
+.resulst-btn.btn-primary:hover {
+    background-color: #0056b3; /* Darker blue on hover for a dynamic effect */
+}
+
