@@ -19,10 +19,10 @@
             </div>
         </div>
         <div class="row learning-media">
-            <div class="col">
+            <div class="col video">
                 {% if 'player.vimeo.com' in item.media %}
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="{{ item.media }}" allowfullscreen></iframe>
+                        <iframe src="{{ item.media }}" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="example3"></iframe>
                     </div>
                 {% else %}
                 <img src="{{ item.media }}" alt="Media" class="img-fluid lesson-img" id="lesson-img-{{ item.number }}">

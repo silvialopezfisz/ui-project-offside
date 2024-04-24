@@ -16,6 +16,13 @@
     </div>
     <div class="row">
         <div class="col">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe src="{{ item.media }}" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="example3"></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
             <div class="options">
                 {% for option in item.options %}
                 <div class="option" data-correct="{{ option.correct }}" data-explanation="{{ option.explanation }}">

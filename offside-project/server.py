@@ -51,7 +51,7 @@ lessons = {
         },
     "7": {
         "number": "7",
-        "media": "https://player.vimeo.com/935697965?share=copy",
+        "media": "https://player.vimeo.com/video/938401528?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
         "title": "Exceptions to the rule",
         "description": "An offside is not called in the 3 following scenarios: goal kick, corner kick, throw in",
         "learningQuestionId" : "3",
@@ -66,27 +66,27 @@ questions = {
         "content": "Is the following goal offside?", 
         "options": [{"text":"Yes", "correct":1, "explanation":"The Manchester City is indeed offside when the ball is PASSED by his teammate."},
                      {"text":"No", "correct":0, "explanation":"The Manchester City player is offside at the moment the ball was passed, so this is incorrect."}], 
-        "media": "https://player.vimeo.com/935697965?share=copy"
+        "media": "https://player.vimeo.com/video/938413075?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
         },
     "2": {
         "Qnumber": "2",
         "type": "quiz", 
         "content": "Why is the following goal offside?", 
-        "options": [{"text":"Mbappe was in front of the ball", "correct":0, "explanation":"This only applies if the passer is in front of the last defender"}, 
-                    {"text":"Mbappe received the ball behind the last defender", "correct":0, "explanation":"Where the attacker receives the ball doesn’t matter. Nuance #5"}, 
-                    {"text":"Mbappe did not touch the ball in front of the goalkeeper","correct":0, "explanation":"This is not a rule"},
-                    {"text":"Mbappe received the ball in front of the second to last player","correct":1, "explanation":"This is the definition of the offside rule. Correct!"}], 
-        "media": "https://player.vimeo.com/935697965?share=copy"
+        "options": [{"text":"Mbappe (#7) was in front of the ball", "correct":0, "explanation":"This only applies if the passer is in front of the last defender"}, 
+                    {"text":"Mbappe (#7) received the ball behind the last defender", "correct":0, "explanation":"Where the attacker receives the ball doesn’t matter. Nuance #5"}, 
+                    {"text":"Mbappe (#7) did not touch the ball in front of the goalkeeper","correct":0, "explanation":"This is not a rule"},
+                    {"text":"Mbappe (#7) received the ball in front of the second to last player","correct":1, "explanation":"This is the definition of the offside rule. Correct!"}], 
+        "media": "https://player.vimeo.com/video/938404474?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
         },
     "3": {
         "Qnumber": "3",
         "type": "quiz", 
         "content": "Is the following goal offside?", 
-        "options": [{"text":"Yes, because Messi is standing in front of the second to last defender when the ball is passed", "correct":0, "explanation":"This is not sufficient for an off-side call, nuance #1 active involvement is required"}, 
-                    {"text":"Yes, because Messi is interfering with the play while standing in front of the second to last defender", "correct": 0, "explanation":"There was no active involvement"}, 
-                    {"text":"No, because the Pedro is standing behind the ball when the ball is passed and Messi does not interfere with the play", "correct": 1, "explanation":"Correct!"},
-                    {"text":"No, because although Messi is standing in an offside position when the ball is passed, he is unaware it is being passed", "correct": 0, "explanation":"This is not a rule"}], 
-        "media": "https://player.vimeo.com/935697965?share=copy"
+        "options": [{"text":"Yes, because Messi (#10) is standing in front of the second to last defender when the ball is passed", "correct":0, "explanation":"This is not sufficient for an off-side call, nuance #1 active involvement is required"}, 
+                    {"text":"Yes, because Messi (#10) is interfering with the play while standing in front of the second to last defender", "correct": 0, "explanation":"There was no active involvement"}, 
+                    {"text":"No, because the Pedro (#7) is standing behind the ball when the ball is passed and Messi (#10) does not interfere with the play", "correct": 1, "explanation":"Correct!"},
+                    {"text":"No, because although Messi (#10) is standing in an offside position when the ball is passed, he is unaware it is being passed", "correct": 0, "explanation":"This is not a rule"}], 
+        "media": "https://player.vimeo.com/video/938410042?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
         }
     }
 
