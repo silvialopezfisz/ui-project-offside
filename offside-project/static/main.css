@@ -454,3 +454,10 @@ body {
     background-color: #0056b3; /* Darker blue on hover for a dynamic effect */
 }
 
+
+.center-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

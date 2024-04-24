@@ -22,7 +22,7 @@
             <div class="col video">
                 {% if 'player.vimeo.com' in item.media %}
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe src="{{ item.media }}" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="example3"></iframe>
+                        <iframe src="{{ item.media }}" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen title="example3"></iframe>
                     </div>
                 {% else %}
                 <img src="{{ item.media }}" alt="Media" class="img-fluid lesson-img" id="lesson-img-{{ item.number }}">
