@@ -91,34 +91,38 @@ questions = {
     }
 
 learning_questions = {
-            "1": {
-                "learningQuestionId": "1",
-                "lessonNumber": "2",
-                "content": "Is this offiside?", 
-                "options": ["Yes", "No"], 
-                "media": "https://player.vimeo.com/935697965?share=copy", 
-                "answer": "No", 
-                "explanation": ["Incorrect", "Correct! As mentioned in the basics: offside can only occur on the attacking side of the field. However, here Torres is on the defending half of the field when the pass is made!"]
-                },
-            "2": {
-                "learningQuestionId": "2",
-                "lessonNumber": "3", 
-                "content": "Is this offiside?", 
-                "options": ["Yes", "No"], 
-                "media": "https://player.vimeo.com/935697965?share=copy", 
-                "answer": "Yes", 
-                "explanation": ["Correct! As mentioned in nuance #1: It’s offside if the player is actively involved! Here, Griezmann is offside when the pass is made and even though he doesn’t directly get the ball, he was actively involved in the play and in an offside position when the ball was passed!", "Incorrect"]
-                },
-            "3": {
-                "learningQuestionId": "3",
-                "lessonNumber": "7", 
-                "content": "Is this offside?", 
-                "options": ["Yes", "No"],
-                "media": "https://player.vimeo.com/935697965?share=copy", 
-                "answer": "No", 
-                "explanation": ["Incorrect", "The correct answer is NO! While Suarez is indeed offside when the “pass” is made, it comes from a throw-in!  Thus, the offside rule is not applicable and the goal is valid!"]
-            }
+    "1": {
+        "learningQuestionId": "1",
+        "lessonNumber": "2",
+        "content": "Is this offside?", 
+        "options": [
+            {"text": "Yes", "correct": 0, "explanation": "Incorrect. As mentioned in the basics: offside can only occur on the attacking side of the field. However, here Torres is on the defending half of the field when the pass is made!"},
+            {"text": "No", "correct": 1, "explanation": "Correct! As mentioned in the basics: offside can only occur on the attacking side of the field. However, here Torres is on the defending half of the field when the pass is made!"}
+        ], 
+        "media": "https://player.vimeo.com/935697965?share=copy"
+    },
+    "2": {
+        "learningQuestionId": "2",
+        "lessonNumber": "3", 
+        "content": "Is this offside?", 
+        "options": [
+            {"text": "Yes", "correct": 1, "explanation": "Correct! As mentioned in nuance #1: It’s offside if the player is actively involved! Here, Griezmann is offside when the pass is made and even though he doesn’t directly get the ball, he was actively involved in the play and in an offside position when the ball was passed!"},
+            {"text": "No", "correct": 0, "explanation": "Incorrect. It’s offside if the player is actively involved! Here, Griezmann is offside when the pass is made and even though he doesn’t directly get the ball, he was actively involved in the play and in an offside position when the ball was passed!"}
+        ],
+        "media": "https://player.vimeo.com/935697965?share=copy"
+    },
+    "3": {
+        "learningQuestionId": "3",
+        "lessonNumber": "7", 
+        "content": "Is this offside?", 
+        "options": [
+            {"text": "Yes", "correct": 0, "explanation": "Incorrect. While Suarez is indeed offside when the 'pass' is made, it comes from a throw-in! Thus, the offside rule is not applicable and the goal is valid!"},
+            {"text": "No", "correct": 1, "explanation": "The correct answer is NO! While Suarez is indeed offside when the 'pass' is made, it comes from a throw-in! Thus, the offside rule is not applicable and the goal is valid!"}
+        ],
+        "media": "https://player.vimeo.com/935697965?share=copy"
     }
+}
+
 
 # ROUTES
 @app.route('/')

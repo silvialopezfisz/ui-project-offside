@@ -20,14 +20,16 @@
             {% for option in item.options %}
             <div class="form-check">
                 <input class="form-check-input" type="radio" name="options" id="option{{ loop.index }}"
-                    value="{{ option }}"
-                    data-answer="{{ item.answer }}">
+                    value="{{ option.text }}"
+                    data-correct="{{ option.correct }}"
+                    data-explanation="{{ option.explanation }}">
                 <label class="form-check-label" for="option{{ loop.index }}">
-                    {{ option }}
+                    {{ option.text }}
                 </label>
             </div>
             {% endfor %}
-            <p id="explanation" style="display:none;">{{ item.explanation }}</p> <!-- Hidden explanation -->
+
+            <p id="explanation" style="display:none;"></p> <!-- Modified to be updated dynamically -->
         </div>
     </div>
     <div class="row">
