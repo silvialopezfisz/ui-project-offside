@@ -11,14 +11,15 @@
     </div>
     <div class="row">
         <div class="col">
-            <p>{{ item.content }}</p>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe src="{{ item.media }}" height="300" width="500"
+                frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; justify-content: center;" title="example3"></iframe>
+            </div>
         </div>
     </div>
     <div class="row">
         <div class="col">
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe src="{{ item.media }}" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="example3"></iframe>
-            </div>
+            <p>{{ item.content }}</p>
         </div>
     </div>
     <div class="row">
