@@ -96,30 +96,33 @@ learning_questions = {
         "lessonNumber": "2",
         "content": "Is this offside?", 
         "options": [
-            {"text": "Yes", "correct": 0, "explanation": "Incorrect. As mentioned in the basics: offside can only occur on the attacking side of the field. However, here Torres is on the defending half of the field when the pass is made!"},
-            {"text": "No", "correct": 1, "explanation": "Correct! As mentioned in the basics: offside can only occur on the attacking side of the field. However, here Torres is on the defending half of the field when the pass is made!"}
+            {"text": "Yes", "correct": 0, "explanation": "Incorrect. As mentioned in the basics: offside can only occur on the attacking side of the field. However, here the player is on the defending half of the field when the pass is made, so he is not offside."},
+            {"text": "No", "correct": 1, "explanation": "Correct! As mentioned in the basics: offside can only occur on the attacking side of the field. However, here the player is on the defending half of the field when the pass is made, so he is not offside."}
         ], 
-        "media": "https://player.vimeo.com/935697965?share=copy"
+        "media": "https://www.youtube.com/embed/unQrPpo7ghs",
+        "explanationMedia": "https://www.youtube.com/embed/69kg9DCjaPc"
     },
     "2": {
         "learningQuestionId": "2",
         "lessonNumber": "3", 
         "content": "Is this offside?", 
         "options": [
-            {"text": "Yes", "correct": 1, "explanation": "Correct! As mentioned in nuance #1: It’s offside if the player is actively involved! Here, Griezmann is offside when the pass is made and even though he doesn’t directly get the ball, he was actively involved in the play and in an offside position when the ball was passed!"},
-            {"text": "No", "correct": 0, "explanation": "Incorrect. It’s offside if the player is actively involved! Here, Griezmann is offside when the pass is made and even though he doesn’t directly get the ball, he was actively involved in the play and in an offside position when the ball was passed!"}
+            {"text": "Yes", "correct": 0, "explanation": "Incorrect!  Here, the offside player is not actively involved. This means the play as a whole is not offside."},
+            {"text": "No", "correct": 1, "explanation": "Correct. As mentioned in nuance #1: Its offside if the player is actively involved! The offside player is not actively involved in the play, thus the play is not offside."}
         ],
-        "media": "https://player.vimeo.com/935697965?share=copy"
+        "media": "https://www.youtube.com/embed/BBZUwqiIDLM",
+        "explanationMedia": "https://www.youtube.com/embed/64B26Rd9Q0U"
     },
     "3": {
         "learningQuestionId": "3",
         "lessonNumber": "7", 
         "content": "Is this offside?", 
         "options": [
-            {"text": "Yes", "correct": 0, "explanation": "Incorrect. While Suarez is indeed offside when the 'pass' is made, it comes from a throw-in! Thus, the offside rule is not applicable and the goal is valid!"},
-            {"text": "No", "correct": 1, "explanation": "The correct answer is NO! While Suarez is indeed offside when the 'pass' is made, it comes from a throw-in! Thus, the offside rule is not applicable and the goal is valid!"}
+            {"text": "Yes", "correct": 0, "explanation": "Incorrect. While the player is indeed offside when the 'pass' is made, it comes from a throw-in! Thus, the offside rule is not applicable and the goal is valid!"},
+            {"text": "No", "correct": 1, "explanation": "Correct! While the player is indeed offside when the 'pass' is made, it comes from a throw-in! Thus, the offside rule is not applicable and the goal is valid!"}
         ],
-        "media": "https://player.vimeo.com/935697965?share=copy"
+        "media": "https://www.youtube.com/embed/o5QkD71XdWE",
+        "explanationMedia": "https://www.youtube.com/embed/O0dq70FsItQ"
     }
 }
 

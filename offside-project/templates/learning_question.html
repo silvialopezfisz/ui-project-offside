@@ -12,7 +12,13 @@
     <div class="row">
         <div class="col">
             <p id="learning-question">{{ item.content }}</p>
-            <img src="{{ item.media }}" alt="Question Media" class="img-fluid">
+
+            <center> 
+                <iframe height="300" width="500" 
+                src="{{ item.media }}"> 
+                </iframe> 
+             </center>
+            <!-- <img src="{{ item.media }}" alt="Question Media" class="img-fluid"> -->
         </div>
     </div>
     <div class="row">
@@ -30,6 +36,11 @@
             {% endfor %}
 
             <p id="explanation" style="display:none;"></p> <!-- Modified to be updated dynamically -->
+            <p id = "explanationMedia"> 
+                <iframe  height="300" width="500"  
+                src="{{ item.explanationMedia }}"> 
+                </iframe> 
+            </p>
         </div>
     </div>
     <div class="row">

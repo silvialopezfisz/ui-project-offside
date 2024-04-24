@@ -382,6 +382,11 @@ body {
     border-radius: 10px;
 }
 
+.visible-explanationmedia {
+    display: flex;
+    justify-content: center;
+}
+
 /* Button styling adjustments */
 #next {
     float: right; /* Aligns the Next button to the right */

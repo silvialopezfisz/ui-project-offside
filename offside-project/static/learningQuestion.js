@@ -1,6 +1,7 @@
 $(document).ready(function() {
     // Initially disable the "Resume Learning" button until an option is selected
     $("#resumeLearning").prop("disabled", true).css("cursor", "default");
+    $("#explanationMedia").css("display", "none");
 
     // Handle option click events
     $(".form-check-input").click(function() {
@@ -17,6 +18,7 @@ $(document).ready(function() {
         // Retrieve the correctness and explanation from data attributes
         var isCorrect = $(this).data('correct');
         var explanation = $(this).data('explanation');
+        var explanationMedia = $(this).data('explanationMedia');
 
         console.log("Is Correct:", isCorrect); // Check if the correct status is being retrieved
         console.log("Explanation:", explanation); // Check what explanation is being retrieved
@@ -29,6 +31,7 @@ $(document).ready(function() {
             $("#explanation").removeClass("visible-explanation").hide(); // Hide the explanation if it is empty
         }
 
+        $("#explanationMedia").css("display", "flex");
         // Apply styles based on whether the answer was correct or not
         if (isCorrect) {
             $(this).parent().addClass("correct");
