@@ -1,48 +1,54 @@
 $(document).ready(function() {
     // Initially disable the "Resume Learning" button until an option is selected
-    $("#resumeLearning").prop("disabled", true).css("cursor", "default");
+    $("#resumeLearning").prop("disabled", true).css("cursor", "default").hide();
     $("#explanationMedia").css("display", "none");
 
-    // Handle option click events
-    $(".form-check-input").click(function() {
-        // Prevent multiple selections by disabling all options once one is selected
-        $(".form-check-input").prop("disabled", true);
-        $(".form-check-input").css("cursor", "default");
+    var optionClicked = false;
 
-        // Remove any previous selections or styles
-        $(".form-check-input").removeClass("selected correct wrong");
 
-        // Mark the clicked option as selected
+    $(".option").click(function() {
+
+        if (optionClicked) {
+            return;
+        }
+
+        optionClicked = true;
+
+        $(".option").css("cursor", "default");
+
+        $(".option").removeClass("selected correct wrong");
+
         $(this).addClass("selected");
 
-        // Retrieve the correctness and explanation from data attributes
-        var isCorrect = $(this).data('correct');
-        var explanation = $(this).data('explanation');
-        var explanationMedia = $(this).data('explanationMedia');
+        var isCorrect = $(this).data("correct");
+        var explanation = $(this).data("explanation");
 
-        console.log("Is Correct:", isCorrect); // Check if the correct status is being retrieved
-        console.log("Explanation:", explanation); // Check what explanation is being retrieved
-
-        $("#explanation").text(explanation); // Display the explanation
+        $("#explanation").text(explanation);
 
         if (explanation.length > 0) {
-            $("#explanation").addClass("visible-explanation").show(); // Make sure to show the explanation if it is not empty
+            $("#explanation").text(explanation).addClass("visible-explanation");
         } else {
-            $("#explanation").removeClass("visible-explanation").hide(); // Hide the explanation if it is empty
+            $("#explanation").text("").removeClass("visible-explanation");
+        }
+
+        $("#explanation").text(explanation); 
+
+        if (explanation.length > 0) {
+            $("#explanation").addClass("visible-explanation").show(); 
+        } else {
+            $("#explanation").removeClass("visible-explanation").hide();
         }
 
         $("#explanationMedia").css("display", "flex");
-        // Apply styles based on whether the answer was correct or not
-        if (isCorrect) {
-            $(this).parent().addClass("correct");
-        } else {
-            $(this).parent().addClass("wrong");
-            // Automatically mark the correct option for educational purposes
-            $(".form-check-input[data-correct='1']").parent().addClass("correct");
-        }
 
-        // Enable the "Resume Learning" button to allow going back to the lesson
-        $("#resumeLearning").prop("disabled", false).css("cursor", "pointer");
+        
+        if (isCorrect) {
+            $(this).addClass("correct");
+            $.get('/increment_score');
+        } else {
+            $(this).addClass("wrong");
+        }
+        $("#resumeLearning").prop("disabled", false).css("cursor", "pointer").show();
     });
 
     // Resume learning button navigates back to the associated lesson

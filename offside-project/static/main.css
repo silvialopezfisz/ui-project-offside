@@ -233,23 +233,6 @@ body {
     margin: 20px 0; /* Adds vertical spacing around images */
 }
 
-/* Styling for options within form checks */
-.learning-question-container .form-check {
-    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background for the options */
-    padding: 10px; /* Padding around options */
-    margin: 10px 0; /* Spacing between each option */
-    border-radius: 5px; /* Rounded corners */
-}
-
-.learning-question-container .form-check-input {
-    margin-right: 10px; /* Space between the checkbox and label */
-}
-
-.learning-question-container .form-check-label {
-    font-size: 1rem; /* Adjusts label font size for clarity */
-    color: #073a08; /* Dark green text to match the theme */
-}
-
 .learning-question-container .btn-secondary {
     background-color: #357ABD; /* Specific shade of blue for the resume button */
     color: #ffffff; /* White text for readability */
@@ -341,15 +324,17 @@ body {
     border-radius: 5px;
 }
 
-/* CSS rules for question options */
+/* Styling for learning question options */
 .option {
-    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.7);
     padding: 10px;
-    margin: 5px;
-    border: 1px solid #ccc;
+    margin-bottom: 10px;
     border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.5); /* Slightly transparent white for option buttons */
-    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #073a08;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .option:hover {
@@ -396,6 +381,7 @@ body {
     padding: 10px;
     border-radius: 5px;
     opacity: 0.75; /* Starts off as half-transparent indicating disabled state */
+    margin-bottom: 5px;
 }
 
 #next:enabled {
