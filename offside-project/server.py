@@ -33,7 +33,7 @@ lessons = {
         "media": "https://i.ibb.co/jk5bcj9/Screenshot-2024-04-16-at-11-15-05-PM.png",
         "title": "Nuance #2: Behind The Ball",
         "description": "If the ball is behind the second to last player, it becomes itself the offside line and cannot be played to a player in front. ",
-        "learningQuestionId" : "",
+        "learningQuestionId" : "3",
         },
     "5": {
         "number": "5",
@@ -54,7 +54,7 @@ lessons = {
         "media": "https://player.vimeo.com/video/938401528?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
         "title": "Exceptions to the rule",
         "description": "An offside is not called in the 3 following scenarios: goal kick, corner kick, throw in",
-        "learningQuestionId" : "3",
+        "learningQuestionId" : "4",
         }
     }
 
@@ -115,6 +115,17 @@ learning_questions = {
     },
     "3": {
         "learningQuestionId": "3",
+        "lessonNumber": "4", 
+        "content": "Is this offside?", 
+        "options": [
+            {"text": "Yes", "correct": 1, "explanation": "Correct! Once the player runs past the last defender, the ball becomes the offside line. Taking into account this new offside line, the last pass was offside."},
+            {"text": "No", "correct": 0, "explanation": "Incorrect. Once the player runs past the last defender, the ball becomes the offside line. Taking into account this new offside line, the last pass was offside."}
+        ],
+        "media": "https://www.youtube.com/embed/1EylGU81Xas",
+        "explanationMedia": "https://www.youtube.com/embed/qnbN9OggRuc"
+    },
+    "4": {
+        "learningQuestionId": "4",
         "lessonNumber": "7", 
         "content": "Is this offside?", 
         "options": [
