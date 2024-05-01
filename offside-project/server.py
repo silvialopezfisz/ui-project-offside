@@ -64,8 +64,8 @@ questions = {
         "Qnumber": "1",
         "type": "quiz", 
         "content": "Is the following goal offside?", 
-        "options": [{"text":"Yes", "correct":1, "explanation":"The Manchester City is indeed offside when the ball is PASSED by his teammate."},
-                     {"text":"No", "correct":0, "explanation":"The Manchester City player is offside at the moment the ball was passed, so this is incorrect."}], 
+        "options": [{"text":"Yes", "correct":1, "explanation":"The Tottenham Attacker (wearing white) is in front of the second to last to last opponent when the ball was passed."},
+                     {"text":"No", "correct":0, "explanation":"The Tottenham Attacker (wearing white) player is offside at the moment the ball was passed, so this is incorrect."}], 
         "media": "https://player.vimeo.com/video/938413075?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
         },
     "2": {
