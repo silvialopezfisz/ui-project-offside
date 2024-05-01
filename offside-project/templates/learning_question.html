@@ -26,9 +26,9 @@
 
             <div class="options">
                 {% for option in item.options %}
-                <div class="option" data-correct="{{ option.correct }}" data-explanation="{{ option.explanation }}">
+                <div class="option" data-correct="{{ option.correct }}" data-explanation="{{ option.explanation | safe }}">
                     {{ option.text }}
-                </div>
+                </div>                
                 {% endfor %}
             </div>
 

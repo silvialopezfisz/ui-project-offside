@@ -96,8 +96,8 @@ learning_questions = {
         "lessonNumber": "2",
         "content": "Is this offside?", 
         "options": [
-            {"text": "Yes", "correct": 0, "explanation": "Incorrect. As mentioned in the basics: offside can only occur on the attacking side of the field. However, here the player is on the defending half of the field when the pass is made, so he is not offside."},
-            {"text": "No", "correct": 1, "explanation": "Correct! As mentioned in the basics: offside can only occur on the attacking side of the field. However, here the player is on the defending half of the field when the pass is made, so he is not offside."}
+            {"text": "Yes", "correct": 0, "explanation": "Incorrect.As mentioned in the basics: offside can only occur on the attacking side of the field. However, here the player is on the defending half of the field when the pass is made, so he is not offside."},
+            {"text": "No", "correct": 1, "explanation": "Correct!As mentioned in the basics: offside can only occur on the attacking side of the field. However, here the player is on the defending half of the field when the pass is made, so he is not offside."}
         ], 
         "media": "https://www.youtube.com/embed/unQrPpo7ghs",
         "explanationMedia": "https://www.youtube.com/embed/69kg9DCjaPc"
@@ -107,7 +107,7 @@ learning_questions = {
         "lessonNumber": "3", 
         "content": "Is this offside?", 
         "options": [
-            {"text": "Yes", "correct": 0, "explanation": "Incorrect!  Here, the offside player is not actively involved. This means the play as a whole is not offside."},
+            {"text": "Yes", "correct": 0, "explanation": "Incorrect! Here, the offside player is not actively involved. This means the play as a whole is not offside."},
             {"text": "No", "correct": 1, "explanation": "Correct. As mentioned in nuance #1: Its offside if the player is actively involved! The offside player is not actively involved in the play, thus the play is not offside."}
         ],
         "media": "https://www.youtube.com/embed/BBZUwqiIDLM",
