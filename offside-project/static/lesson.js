@@ -6,16 +6,16 @@ $(document).ready(function(){
             window.location.href = "/quizStart"
         }
         else{
-            window.location.href = "/lesson/" + nextLessonNumber;  // Navigate to the next lesson
+            window.location.href = "/lesson/" + nextLessonNumber;  // next lesson
         }
     });
 
     $("#prev").click(function(){
         let prevLessonNumber = parseInt(lessonNumber) - 1;  // Convert to integer and decrement
         if (prevLessonNumber < 1) {
-            window.location.href = "/";  // Return to the homepage if there is no previous lesson
+            window.location.href = "/";  // Return to the homepage
         } else {
-            window.location.href = "/lesson/" + prevLessonNumber;  // Navigate to the previous lesson
+            window.location.href = "/lesson/" + prevLessonNumber;  // previous lesson
         }
     });
 

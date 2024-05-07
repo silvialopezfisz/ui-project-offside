@@ -2,8 +2,8 @@
 body {
     font-family: 'Montserrat', sans-serif;
     color: #073a08; /* Dark green, like text on a soccer pitch */
-    background: url('https://i.ibb.co/zV4PyVj/79-F1-F82-D-B925-4-D1-E-8263-03107-CDBFB11-1-201-a.jpg') repeat; /* URL to your grass texture image */
-    background-size: cover; /* Cover the entire background */
+    background: url('https://i.ibb.co/zV4PyVj/79-F1-F82-D-B925-4-D1-E-8263-03107-CDBFB11-1-201-a.jpg') repeat;
+    background-size: cover;
     color: white; /* Change text color to white for better readability */
 }
 
@@ -49,8 +49,8 @@ body {
     margin-top: 5%;
     padding: 20px;
     text-align: center;
-    background-color: #597630; /* Slightly transparent white background for content */
-    border-radius: 8px; /* Optional: rounded corners for the container */
+    background-color: #597630; /* Slightly transparent white background */
+    border-radius: 8px;
 }
 
 .home-intro {
@@ -157,10 +157,10 @@ body {
 /* Enhancing the appearance of buttons */
 #lesson-body .btn {
     width: auto; /* Allows the button to expand based on its content */
-    padding: 15px 30px; /* Larger padding for bigger buttons */
-    font-size: 1.2rem; /* Larger font size for better readability */
-    font-weight: bold; /* Makes the text bold */
-    letter-spacing: 1px; /* Increases spacing between letters */
+    padding: 15px 30px; 
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
     transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
     cursor: pointer;
 }
@@ -191,7 +191,7 @@ body {
 
 /* Enhancements for learning question page */
 .learning-question-container .row {
-    margin-bottom: 20px; /* Adds spacing between rows for better visual separation */
+    margin-bottom: 20px; 
 }
 
 .learning-question-container h2 {
@@ -205,7 +205,7 @@ body {
     border-radius: 10px;
     color: #004d99; /* Adds a FIFA-like blue color to match the site theme */
     text-align: center; /* Centers the title for better focus */
-    margin-bottom: 25px; /* Adds more space below the header */
+    margin-bottom: 25px;
 }
 
 .learning-question-container p {
@@ -217,7 +217,7 @@ body {
     background-color: #004d99;
     padding: 10px;
     border-radius: 10px;
-    font-size: 1.1rem; /* Increases font size for readability */
+    font-size: 1.1rem;
     color: #ffffff; /* White color for better contrast against the background */
     text-align: justify; /* Justifies text for a cleaner presentation */
 }
@@ -235,15 +235,15 @@ body {
 
 .learning-question-container .btn-secondary {
     background-color: #357ABD; /* Specific shade of blue for the resume button */
-    color: #ffffff; /* White text for readability */
+    color: #ffffff;
     padding: 10px 20px; /* Adequate padding for a larger button */
-    font-size: 1.2rem; /* Larger font size for better interaction */
-    border-radius: 5px; /* Rounded corners for aesthetic alignment */
+    font-size: 1.2rem; 
+    border-radius: 5px; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
 }
 
 .learning-question-container .btn-secondary:hover {
-    background-color: #285a8e; /* Darker shade on hover for a dynamic effect */
+    background-color: #285a8e; 
 }
 
 
@@ -255,9 +255,9 @@ body {
     padding: 20px;
     text-align: center; /* Ensures quizStart text and buttons are centered */
     background-color: rgba(89, 112, 48, 0.9); /* Semi-transparent dark green background */
-    border-radius: 8px; /* Soft rounded corners for a modern look */
+    border-radius: 8px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds depth with a subtle shadow */
-    color: #ffffff; /* White text for high contrast and readability */
+    color: #ffffff; 
 }
 
 #quizStart div:first-child {
@@ -401,8 +401,8 @@ body {
     max-width: 800px; /* Restricts the maximum width for better readability */
     margin: 40px auto; /* Centers the results-container with a top margin */
     background-color: rgba(255, 255, 255, 0.9); /* Light background for the text content */
-    border-radius: 8px; /* Adds rounded corners for a softer look */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow to lift the panel off the page */
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 .results-container h2 {
@@ -413,8 +413,8 @@ body {
 
 .results-container p.lead {
     font-size: 1.4rem; /* Slightly larger paragraph font size */
-    color: white; /* Soft, dark gray color for the text */
-    margin-bottom: 30px; /* Extra space below the paragraph */
+    color: white; 
+    margin-bottom: 30px; 
 }
 
 .alert.alert-success {
@@ -423,7 +423,7 @@ body {
     border-color: #c3e6cb; /* Matching green border */
     padding: 15px; /* Padding for the alert box */
     border-radius: 5px; /* Rounded corners for the alert box */
-    font-weight: bold; /* Makes the font bold */
+    font-weight: bold;
     font-size: 1.2rem; /* Larger font size for emphasis */
     margin-bottom: 25px;
 }
@@ -432,8 +432,8 @@ body {
     margin-top: 10px;
     background-color: #007bff; /* Vivid blue for primary actions */
     border: none; /* No border to keep the button clean */
-    padding: 10px 20px; /* Adequate padding for a clickable area */
-    font-size: 1.2rem; /* Larger font size for better readability */
+    padding: 10px 20px; 
+    font-size: 1.2rem;
     border-radius: 5px; /* Rounded corners for the button */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Adds depth with a shadow */
     transition: background-color 0.3s; /* Smooth transition for hover effect */
